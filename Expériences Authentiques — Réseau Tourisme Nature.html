@@ -162,7 +162,7 @@
   }
   .section-title {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+    font-size: clamp(1.3rem, 2.8vw, 1.9rem);
     line-height: 1.2; color: var(--forest);
     max-width: 600px;
   }
@@ -278,7 +278,7 @@
     line-height: 1; flex-shrink: 0; width: 50px;
   }
   .avantage-title { font-weight: 600; font-size: 1rem; color: var(--white); margin-bottom: 0.4rem; }
-  .avantage-text { font-size: 0.88rem; color: rgba(216,243,220,0.7); line-height: 1.6; }
+  .avantage-text { font-size: 0.88rem; color: rgba(216,243,220,0.7); line-height: 1.6; text-align: justify; }
 
   /* ── COMMENT ÇA MARCHE ── */
   #process { background: var(--white); }
@@ -307,7 +307,7 @@
   }
   .step:hover .step-circle { background: var(--terra); transform: scale(1.1); }
   .step-title { font-weight: 600; font-size: 0.95rem; color: var(--forest); margin-bottom: 0.5rem; }
-  .step-text { font-size: 0.85rem; color: var(--gray); line-height: 1.6; }
+  .step-text { font-size: 0.85rem; color: var(--gray); line-height: 1.6; text-align: justify; }
 
   .commission-table {
     margin-top: 4rem;
@@ -429,6 +429,7 @@
     .ct-header div:nth-child(n+3), .ct-row div:nth-child(n+3) { display: none; }
   }
   @media (max-width: 600px) {
+    .section-body, .card-text, .search-card p, .avantage-text, .step-text { text-align: justify; }
     .search-grid { grid-template-columns: 1fr; }
     .hero-title { font-size: 2.2rem; }
   }
